@@ -48,3 +48,13 @@ export const projects: Project[] = [
     icon: BarChart3,
   },
 ]
+export interface Project {
+  title: string
+  description: string
+  status: ProjectStatus
+  tech: string[]
+  icon: LucideIcon
+  liveUrl?: string // add when a live demo exists
+  codeUrl?: string // add when the source code is public
+  image?: string // preview screenshot (set automatically for GitHub projects)
+}

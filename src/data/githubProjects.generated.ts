@@ -6,6 +6,7 @@ export interface GithubProject {
   tech: string[]
   liveUrl?: string
   codeUrl: string
+  image?: string
 }
 
 export const githubProjects: GithubProject[] = [
@@ -17,6 +18,7 @@ export const githubProjects: GithubProject[] = [
       "TypeScript"
     ],
     "codeUrl": "https://github.com/ralph123ti/kallemind",
-    "liveUrl": "https://kallemind1.vercel.app"
+    "liveUrl": "https://kallemind1.vercel.app",
+    "image": "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fkallemind1.vercel.app?w=800&h=500"
   }
 ]
