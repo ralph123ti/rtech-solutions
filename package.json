@@ -3,8 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+    "scripts": {
+    "fetch:projects": "node scripts/fetch-projects.mjs",
+    "predev": "npm run fetch:projects",
     "dev": "vite",
+    "prebuild": "npm run fetch:projects",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
